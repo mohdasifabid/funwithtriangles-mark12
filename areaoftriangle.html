@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="areaoftriangle.js" defer type="text/javascript"></script>
+    <style>
+      .input-box {
+        border-radius: 0.4rem;
+        padding: 0.1rem;
+        display: block;
+        margin-top: 5px;
+      }
+
+      #header {
+        background-color: black;
+        color: skyblue;
+        text-align: right;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        margin: 30px 30px 30px 30px;
+      }
+      .navigation {
+        display: inline;
+        border-radius: 5px;
+        background-color: skyblue;
+        color: solid black;
+        font-size: large;
+        margin: 10px;
+        padding: 0.2rem;
+      }
+      #header-heading {
+        text-align: left;
+        margin-left: 13px;
+        margin-top: 8px;
+      }
+      .input-box {
+        border-radius: 0.8rem;
+        padding: 1rem;
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 43%;
+      }
+
+      .label-value {
+        margin-left: 43%;
+        font-size: large;
+        color: black;
+      }
+
+      #calculate-area {
+        margin-left: 46%;
+        padding: 0.2rem;
+        border-radius: 0.2rem;
+        background-color: skyblue;
+      }
+
+      #output {
+        text-align: center;
+      }
+
+      #sub-heading {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: lightgray">
+    <header id="header">
+      <h1 id="header-heading">fun with triangles</h1>
+      <nav class="navigation"><a href="index.html">is triangle</a></nav>
+      <nav class="navigation"><a href="quiz.html">quiz</a></nav>
+      <nav class="navigation"><a href="hypotenuse.html">hypotenuse</a></nav>
+    </header>
+    <h1 id="sub-heading">Calculate area of a triangle</h1>
+
+    <div>
+      <label for="side-one" class="label-value"
+        >Enter first side of the triangle
+      </label>
+      <input class="input-box" type="number" id="side-one" />
+      <br />
+      <label for="side-two" class="label-value"
+        >Enter second side of the triangle
+      </label>
+      <input class="input-box" type="number" id="side-two" />
+      <br />
+      <label for="side-three" class="label-value"
+        >Enter third side of the triangle</label
+      >
+      <input class="input-box" id="side-three" />
+      <button id="calculate-area">Calculate Area of ꕔ</button>
+      <h2 id="output"></h2>
+    </div>
+  </body>
+</html>
