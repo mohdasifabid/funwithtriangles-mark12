@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz</title>
+    <script src="quiz.js" defer type="text/javascript"></script>
+  </head>
+  <body>
+    <form class="quiz-form">
+      <div id="questions">
+        <div class="question-container">
+          <span
+            >What is the third angle for the triangle where angle1 = 45° and
+            angle2 = 45°?</span
+          >
+          <br />
+          <label for="q-1-a">45°</label>
+          <input type="radio" name="question1" class="question1" id="q-1-a" value="45"/>
+          <label for="q-1-b">90°</label>
+          <input type="radio" name="question1" class="question1" id="q-1-b" value="90"/>
+          <label for="q-1-c">60°</label>
+          <input type="radio" name="question1" class="question1" id="q-1-c" value="60"/>
+        </div>
+
+        <div class="question-container">
+            <span
+              >If a triangle has an angle of 90 degrees, what is it called?</span
+            >
+            <br />
+            <label for="q-2-a">obtuse</label>
+            <input type="radio" name="question2" class="question2" id="q-2-a" value="obtuse"/>
+            <label for="q-2-b">acute</label>
+            <input type="radio" name="question2" class="question2" id="q-2-b" value="acute" />
+            <label for="q-2-c">right angled</label>
+            <input type="radio" name="question2" class="question2" id="q-2-c" value="right angled" />
+          </div>
+        </div>
+      </div>
+      <button id="submit-btn">Submit</button>
+    </form>
+  </body>
+</html>

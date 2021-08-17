@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculate hypotenuse</title>
+    <script src="hypotenuse.js" defer type="text/javascript"></script>
+    <style>
+      .input-box {
+        border-radius: 0.4rem;
+        padding: 0.1rem;
+        display: block;
+        margin-top: 5px;
+      }
+
+      #header {
+        background-color: black;
+        color: skyblue;
+        text-align: right;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        margin: 30px 30px 30px 30px;
+      }
+      .navigation {
+        display: inline;
+        border-radius: 5px;
+        background-color: skyblue;
+        color: solid black;
+        font-size: large;
+        margin: 10px;
+        padding: 0.2rem;
+      }
+      #header-heading {
+        text-align: left;
+        margin-left: 13px;
+        margin-top: 8px;
+      }
+      .input-box {
+        border-radius: 0.8rem;
+        padding: 1rem;
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 43%;
+      }
+
+      .label-value {
+        margin-left: 43%;
+        font-size: large;
+        color: black;
+      }
+
+      #calculate-hypotenuse {
+        margin-left: 45%;
+        padding: 0.2rem;
+        border-radius: 0.2rem;
+        background-color: skyblue;
+      }
+
+      #output {
+        text-align: center;
+      }
+
+      #sub-heading {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: lightgray">
+    <header id="header">
+      <h1 id="header-heading">fun with triangles</h1>
+      <nav class="navigation"><a href="index.html">is triangle</a></nav>
+      <nav class="navigation"><a href="quiz.html">quiz</a></nav>
+      <nav class="navigation"><a href="hypotenuse.html">hypotenuse</a></nav>
+    </header>
+    <h1 id="sub-heading">Calculate the hypotenuse of a triangle</h1>
+
+    <div>
+      <label for="base-value" class="label-value"
+        >Enter Base Value (a) here
+      </label>
+      <input class="input-box" type="number" id="base-value" />
+      <br />
+      <label for="height-value" class="label-value"
+        >Enter Height Value (b) here
+      </label>
+      <input class="input-box" type="number" id="height-value" />
+      <br />
+      <button id="calculate-hypotenuse">Calculate Hypotenuse</button>
+      <h2 id="output"></h2>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js" defer type="text/javascript"></script>
+    <style>
+      #header-heading {
+        text-align: left;
+        margin-left: 13px;
+        margin-top: 8px;
+      
+      }
+
+      .navigation {
+        display: inline;
+        border-radius: 5px;
+        background-color: skyblue;
+        color: solid black;
+        font-size: large;
+        margin: 10px;
+        padding: .2rem;
+      }
+
+      #header {
+        background-color: black;
+        color: skyblue;
+        text-align: right;
+        border-radius: 1rem;
+        padding: .5rem;
+        margin: 30px 30px 30px 30px;
+      }
+
+      .angle-input {
+        border-radius: 0.8rem;
+        padding: 1rem;
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 43%;
+        
+
+      }
+
+      .angle-label {
+        margin-left: 48%;
+        font-size: large;
+        color: black;
+      }
+
+      #isTriangle {
+        margin-left: 47%;
+        padding: 0.2rem;
+        border-radius: 0.2rem;
+        background-color: skyblue;
+      }
+
+      
+
+      #output{
+        text-align: center;
+      }
+        
+
+    </style>
+  </head>
+  <body style="background-color: lightgrey;">
+    <header id="header">
+      <h1 id="header-heading">fun with triangles 
+        <p id="symbols" style="color: lightgray;">△	▽	◁	▷	
+        
+          ꕔ	ߜ	◅	▻	⧌	⨹	⨻	⨺	⟁
+            ◭	◮	⧩	⧨
+          ⍙		⧏	⧐</p>	</h1>
+      <nav class="navigation"><a href="index.html">is triangle</a></nav>
+      <nav class="navigation"><a href="quiz.html">quiz</a></nav>
+      <nav class="navigation"><a href="hypotenuse.html">hypotenuse</a></nav>
+      
+    </header>
+
+   <div>
+            <label for="angle1" class="angle-label">Angle1</label>
+            <input id="angle1" placeholder="angle1" type="number" class="angle-input">
+          </div>
+          <div>
+            <label for="angle2" class="angle-label">Angle2</label>
+            <input id="angle2" placeholder="angle2" type="number" class="angle-input">
+          </div>
+          <div>
+            <label for="angle3" class="angle-label">Angle3</label>
+            <input id="angle3" placeholder="angle3" type="number" class="angle-input">
+          </div>
+          <button id="isTriangle">Is Triangel?</button>
+          <h2 id="output"></h2>
+    </div>
+    
+  </body>
+</html>
