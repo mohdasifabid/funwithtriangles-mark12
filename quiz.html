@@ -6,13 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>quiz</title>
     <script src="quiz.js" defer type="text/javascript"></script>
+    <style>
+      #header {
+        background-color: black;
+        color: skyblue;
+        text-align: right;
+        border-radius: 1rem;
+        padding: .5rem;
+        margin: 30px 30px 30px 30px;
+      }
+      #header-heading {
+        text-align: left;
+        margin-left: 13px;
+        margin-top: 8px;
+      
+      }
+      
+      .navigation {
+        display: inline;
+        border-radius: 5px;
+        background-color: skyblue;
+        color: solid black;
+        font-size: large;
+        margin: 10px;
+        padding: .2rem;
+      }
+      #submit-btn {
+        margin-left: 47%;
+        padding: 0.2rem;
+        border-radius: 0.2rem;
+        background-color: skyblue;
+      }
+      #output {
+        text-align: center;
+      }
+
+      .q12 {
+       font-size: larger;
+        color: black;
+        padding: 10px;
+        display: block;
+      }
+      
+
+    </style>
   </head>
-  <body>
+  <body style="background-color: lightgrey;">
+
+    <header id="header">
+      <h1 id="header-heading">fun with triangles 
+        <p id="symbols" style="color: lightgray;"></p>	</h1>
+      <nav class="navigation"><a href="index.html">is triangle</a></nav>
+      <nav class="navigation"><a href="quiz.html">quiz</a></nav>
+      <nav class="navigation"><a href="hypotenuse.html">hypotenuse</a></nav>
+      <nav class="navigation"><a href="areaoftriangle.html">calculate area of ꕔ</a></nav>
+      
+    </header>
+
     <form class="quiz-form">
       <div id="questions">
         <div class="question-container">
           <span
-            >What is the third angle for the triangle where angle1 = 45° and
+          class="q12" >Q1. What is the third angle for the triangle where angle1 = 45° and
             angle2 = 45°?</span
           >
           <br />
@@ -26,7 +81,7 @@
 
         <div class="question-container">
             <span
-              >If a triangle has an angle of 90 degrees, what is it called?</span
+              class="q12">Q2. If a triangle has an angle of 90 degrees, what is it called?</span
             >
             <br />
             <label for="q-2-a">obtuse</label>
@@ -38,7 +93,9 @@
           </div>
         </div>
       </div>
+      
       <button id="submit-btn">Submit</button>
+      <h2 id="output"></h2>
     </form>
   </body>
 </html>
